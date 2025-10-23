@@ -2,7 +2,9 @@ import axios from "axios";
 
 // Create axios instance with default config
 const api = axios.create({
-  baseURL: import.meta.env.REACT_APP_API_BASE_URL || "http://localhost:5000",
+  baseURL:
+    import.meta.env.REACT_APP_API_BASE_URL ||
+    "https://mgnrega-dashboard.onrender.com",
   timeout: parseInt(import.meta.env.REACT_APP_API_TIMEOUT) || 30000,
   headers: {
     "Content-Type": "application/json",
