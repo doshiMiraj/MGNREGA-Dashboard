@@ -280,7 +280,7 @@ async function seedDatabase() {
       const batch = allData.slice(i, i + batchSize);
       await District.bulkCreate(batch, {
         updateOnDuplicate: Object.keys(District.rawAttributes).filter(
-          (key) => !["id", "createdAt", "updatedAt"].includes(key)
+          (key) => !["id", "created_at", "updated_at"].includes(key)
         ),
       });
       inserted += batch.length;

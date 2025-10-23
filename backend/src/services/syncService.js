@@ -39,7 +39,7 @@ class SyncService {
       // Bulk upsert to database
       const upsertResult = await District.bulkCreate(transformedData, {
         updateOnDuplicate: Object.keys(District.rawAttributes).filter(
-          (key) => !["id", "createdAt", "updatedAt"].includes(key)
+          (key) => !["id", "created_at", "updated_at"].includes(key)
         ),
       });
 
@@ -171,7 +171,7 @@ class SyncService {
 
       const upsertResult = await District.bulkCreate(transformedData, {
         updateOnDuplicate: Object.keys(District.rawAttributes).filter(
-          (key) => !["id", "createdAt", "updatedAt"].includes(key)
+          (key) => !["id", "created_at", "updated_at"].includes(key)
         ),
       });
 
