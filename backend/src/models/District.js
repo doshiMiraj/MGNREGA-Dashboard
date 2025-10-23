@@ -180,6 +180,8 @@ const District = sequelize.define(
     },
   },
   {
+    timestamps: true,
+    underscored: true,
     indexes: [
       {
         fields: ["district_code", "fin_year", "month"],
