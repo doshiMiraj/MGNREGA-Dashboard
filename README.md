@@ -337,8 +337,6 @@ GET /api/districts
 GET /api/health
 ```
 
-**Full API documentation:** [API.md](docs/API.md)
-
 ---
 
 ## 📸 Screenshots
