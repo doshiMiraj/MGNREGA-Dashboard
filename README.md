@@ -1,4 +1,4 @@
-# 🇮🇳 MGNREGA Dashboard
+# MGNREGA Dashboard
 
 > **Making Government Welfare Data Accessible to Rural India**
 
